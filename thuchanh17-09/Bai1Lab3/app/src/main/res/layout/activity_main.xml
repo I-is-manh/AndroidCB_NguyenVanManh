@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lập trình sự kiện"
+        android:background="@color/purple_700"
+        android:textColor="@color/white"
+        android:paddingLeft="10dp"
+        android:paddingVertical="10dp"
+        android:textSize="25sp"
+
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Số A: "
+            android:textSize="30sp"
+
+            />
+        <EditText
+            android:id="@+id/text1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="26sp"
+            android:inputType="text"
+            android:hint="Số"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Số B: "
+
+            android:textSize="30sp"
+
+            />
+        <EditText
+            android:id="@+id/text2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:inputType="text"
+            android:hint="Số"
+            />
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/txtkq"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="10dp"
+        android:textAlignment="center"
+        android:text="Kết quả"
+        android:textSize="25dp"
+
+        />
+    <Button
+        android:id="@+id/tong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tổng 2 số"
+        android:textSize="20dp"
+        android:background="@drawable/shape_button"
+        android:layout_marginBottom="5dp"
+        />
+    <Button
+        android:id="@+id/hieu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hiệu 2 số"
+        android:textSize="20dp"
+        android:background="@drawable/shape_button"
+        android:layout_marginBottom="5dp"
+        />
+    <Button
+        android:id="@+id/tich"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tích 2 số"
+        android:textSize="20dp"
+        android:background="@drawable/shape_button"
+        android:layout_marginBottom="5dp"
+        />
+    <Button
+        android:id="@+id/thuong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thương 2 số"
+        android:textSize="20dp"
+        android:background="@drawable/shape_button"
+        android:layout_marginBottom="5dp"
+        />
+    <Button
+        android:id="@+id/ucln"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ước chung lớn nhất"
+        android:textSize="20dp"
+        android:background="@drawable/shape_button"
+        android:layout_marginBottom="5dp"
+        />
+    <Button
+        android:id="@+id/clear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Xóa"
+        android:textSize="20dp"
+        android:background="@drawable/shape_button"
+        android:layout_marginBottom="5dp"
+        />
+    <Button
+        android:id="@+id/out"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thoát"
+        android:textSize="20dp"
+        android:textColor="#AF0505"
+        android:background="@drawable/shape_out"
+        android:layout_marginBottom="5dp"
+        android:layout_gravity="center"
+        />
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/baseline_mail_24"
+        android:background="@drawable/shape_mail"
+        android:layout_gravity="right"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="-40dp"
+        />
+</LinearLayout>
