@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    >
+
+    <EditText
+        android:id="@+id/edit1"
+        android:layout_width="match_parent"
+        android:layout_height="73dp"
+        android:gravity="center"
+        android:hint="Nhập số"
+        android:inputType="numberDecimal"
+        tools:ignore="InvalidId" />
+    <EditText
+        android:id="@+id/edit2"
+        android:layout_width="match_parent"
+        android:layout_height="73dp"
+        android:gravity="center"
+        android:hint="Nhập số"
+        android:inputType="numberDecimal"
+        />
+
+    <TextView
+        android:id="@+id/textview1"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:gravity="center"
+        android:textSize="22sp"
+
+        android:text="Kết quả" />
+    <LinearLayout
+        android:id="@+id/layoutt1"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:gravity="center"
+            android:background="@drawable/borderadius"
+            android:layout_weight="1"
+            android:onClick="TinhToan"
+            android:layout_marginRight="1dp" />
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="97dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="2dp"
+            android:text="-"
+            android:layout_weight="1"
+            android:onClick="TinhToan"
+            android:background="@drawable/borderadius"
+            android:gravity="center"
+             />
+
+        <Button
+            android:id="@+id/btn3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*"
+            android:gravity="center"
+            android:background="@drawable/borderadius"
+            android:layout_weight="1"
+            android:onClick="TinhToan"
+            android:layout_marginRight="1dp" />
+
+        <Button
+            android:id="@+id/btn4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/"
+            android:gravity="center"
+            android:onClick="TinhToan"
+            android:background="@drawable/borderadius"
+            android:layout_weight="1"
+            android:layout_marginRight="1dp" />
+
+        <Button
+            android:id="@+id/btn5"
+            android:layout_width="wrap_content"
+            android:onClick="TinhToan"
+            android:layout_height="wrap_content" android:text="%" android:gravity="center"
+            android:background="@drawable/borderadius"
+            android:layout_weight="1"
+            android:layout_marginRight="1dp"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

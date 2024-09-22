@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+    android:background="#2993B2"
+    android:padding="20dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Radomly"
+        android:layout_alignParentLeft="true"
+        android:textStyle="bold"
+        android:textSize="25sp" />
+
+    <ImageView
+        android:scaleType="fitXY"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+
+        android:src="@drawable/baseline_menu_24" />
+</RelativeLayout>

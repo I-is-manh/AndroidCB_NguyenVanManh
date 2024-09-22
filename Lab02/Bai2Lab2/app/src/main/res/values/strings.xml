@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Bai2Lab2</string>
+    <string name="animal_sound">Animal sound</string>
+    <string name="loading">Loading</string>
+</resources>
