@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
     Button tong,hieu,thuong,tich,ucln,out,clear;
     EditText edit1,edit2;
     TextView txtkq;
-     public float ucln(float a,float b){
+     public int ucln(int a,int b){
         if(b == 0) return a;
         else return ucln(b,a%b);
     }
@@ -42,32 +42,33 @@ public class MainActivity extends AppCompatActivity {
         tong.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                float numberA = Float.parseFloat(edit1.getText().toString());
-        float numberB = Float.parseFloat(edit2.getText().toString());
-                float kq = numberA+ numberB;
+                int numberA = Integer.parseInt(edit1.getText().toString());
+                int numberB = Integer.parseInt(edit2.getText().toString());
+                int kq = numberA+ numberB;
                 txtkq.setText(kq+"");
             }
         });
         hieu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                float numberA = Float.parseFloat(edit1.getText().toString());
-        float numberB = Float.parseFloat(edit2.getText().toString());
-                float kq = numberA - numberB;
+                int numberA = Integer.parseInt(edit1.getText().toString());
+                int numberB = Integer.parseInt(edit2.getText().toString());
+                int kq = numberA - numberB;
                 txtkq.setText(kq+"");
             }
         });
         thuong.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                float numberA = Float.parseFloat(edit1.getText().toString());
-        float numberB = Float.parseFloat(edit2.getText().toString());
+                int numberA = Integer.parseInt(edit1.getText().toString());
+                int numberB = Integer.parseInt(edit2.getText().toString());
+
                 if(numberB == 0){
                     Toast.makeText(MainActivity.this, "Không thể chia cho số 0", Toast.LENGTH_SHORT).show();
                     return;
                 }
                 else {
-                    float kq = numberA / numberB;
+                    int kq = numberA / numberB;;
                     txtkq.setText(kq+"");
                 }
             }
@@ -75,18 +76,18 @@ public class MainActivity extends AppCompatActivity {
         tich.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                float numberA = Float.parseFloat(edit1.getText().toString());
-                float numberB = Float.parseFloat(edit2.getText().toString());
-                float kq = numberA * numberB;
+                int numberA = Integer.parseInt(edit1.getText().toString());
+                int numberB = Integer.parseInt(edit2.getText().toString());
+                int kq = numberA * numberB;
                 txtkq.setText(kq+"");
             }
         });
         ucln.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                float numberA = Float.parseFloat(edit1.getText().toString());
-                float numberB = Float.parseFloat(edit2.getText().toString());
-                float kq = ucln(numberA,numberB);
+                int numberA = Integer.parseInt(edit1.getText().toString());
+                int numberB = Integer.parseInt(edit2.getText().toString());
+                int kq = ucln(numberA,numberB);
                 txtkq.setText(kq+"");
             }
         });
